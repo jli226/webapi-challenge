@@ -26,13 +26,25 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+routing which allows us to build several endpoints to our server based on the url
+process.env which allows us to provide environment variables
+
 - [ ] Describe Middleware?
+
+Middleware are functions which allow us to add extra and/or custom functionality to our application. You can have global middleware which runs on all endpoints, or specific middleware to run on endpoints of your choosing. Express has built-in middleware, but you can also use third party middleware, as well as custom middleware which you create yourself.
 
 - [ ] Describe a Resource?
 
+A resource is data which has been grouped together based on a commonality. Resource's are provided by the server, from the backend to the front end.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+2xx codes indicates that the client's request was successfully received, understood, and accepted.
+200 = ok, and is most common.
+
 - [ ] How can we partition our application into sub-applications?
+
+We can use express routing to break our application into different request handlers for each combination of URL and HTTP type.
 
 ## Project Setup
 
